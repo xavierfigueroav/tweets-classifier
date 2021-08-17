@@ -9,3 +9,4 @@ clasificacion/classifiers/models
 __pycache__
 .env
 data
+db.sqlite3
