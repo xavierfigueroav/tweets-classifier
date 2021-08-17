@@ -6,4 +6,6 @@ clasificacion/classifiers/models
 
 .vscode
 
-**/__pycache__
+__pycache__
+.env
+data
