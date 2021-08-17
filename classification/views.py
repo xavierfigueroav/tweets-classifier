@@ -8,7 +8,7 @@ logit_classifier = LogisticRegressionClassifier()
 
 
 def index(request):
-    return render(request, 'clasificacion/index.html')
+    return render(request, 'classification/index.html')
 
 
 def hashtag(request):
@@ -25,10 +25,10 @@ def hashtag(request):
                 'ofertas': prediction.get(1, []),
                 'ninguna': prediction.get(2, [])
             }
-        return render(request, 'clasificacion/hashtag.html', context)
+        return render(request, 'classification/hashtag.html', context)
     else:
-        return render(request, 'clasificacion/hashtag.html')
+        return render(request, 'classification/hashtag.html')
 
 
 def tweet(request):
-    return render(request, 'clasificacion/tweet.html')
+    return render(request, 'classification/tweet.html')
